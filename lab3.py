@@ -24,7 +24,7 @@ for c in userString:
         upper_count += 1
     if c in "0123456789":
         digit_count += 1
-    if c in "~`@#$%^&*()_-+=/[]{}\|':;,.<>?!":
+    if c in "~`@#$%^&*()_-+=/[]{}\|':;,.<>?!":  # pylint: disable=anomalous-backslash-in-string
         punctuation_count += 1
 
 # This part of my code prints out how many characters it found for each variable
