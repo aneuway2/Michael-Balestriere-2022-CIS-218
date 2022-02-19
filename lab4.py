@@ -3,14 +3,16 @@ Michael Balestriere
 Week 4 - Make a dictionary
 """
 
-my_dict = {}
-my_dict["sport"] = "My favorite sport is soccer "
-my_dict["song"] = "My favorite song is Thriller by Michael Jackson"
-my_dict["game"] = "My favorite video game is League of Lengends"
-
+my_dict = {
+    "sport": "My favorite sport is soccer ",
+    "song": "My favorite song is Thriller by Michael Jackson",
+    "game": "My favorite video game is League of Legends",
+}
 while True:
     user_input = input(
-        "Type in 'sport' , 'song' , or 'game' to learn one of my favorites, or type in a term to get the defenition, or type in 'new' to add a new word to the dictionary - "
+        "Type in 'sport' , 'song' , or 'game' to learn one of my favorites "
+        "Type in a term to get the defenition "
+        "Type in 'new' to add a new word to the dictionary - "
     )
     if user_input == "sport":
         print(my_dict["sport"])
