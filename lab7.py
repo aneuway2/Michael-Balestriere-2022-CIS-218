@@ -16,10 +16,10 @@ def bmi_to_cat(bmi):
     if bmi <= 18.4:
         print("You are Underweight")
         return "Underweight"
-    if bmi >= 18.5 and bmi <= 24.9:
+    if 18.5 <= bmi <= 24.9:
         print("You are Healthy")
         return "Healthy"
-    if bmi >= 25.0 and bmi <= 29.9:
+    if 25.0 <= bmi <= 29.9:
         print("You are Overweight")
         return "Overweight"
     if bmi >= 30.0:
@@ -29,11 +29,11 @@ def bmi_to_cat(bmi):
 
 def test_calculate_bmi():
     """test bmi"""
-    assert calculate_bmi(135, 68)
-    assert calculate_bmi(100, 60)
-    assert calculate_bmi(175, 72)
-    assert calculate_bmi(225, 77)
-    assert calculate_bmi(150, 65)
+    assert calculate_bmi(135, 68) == 20.5
+    assert calculate_bmi(100, 60) == 19.5
+    assert calculate_bmi(175, 72) == 23.7
+    assert calculate_bmi(225, 77) == 26.7
+    assert calculate_bmi(150, 65) == 25.0
     print("All checks match part 1 chart!")
 
 
